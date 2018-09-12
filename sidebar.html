@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: cadetblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbutton:hover{
+    color: cadetblue;
+}
+
+</style>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-chevron-circle-right"></i></a>
+    <a href="#"><i class="fa fa-home"></i><sapn>Home</sapn></a>
+    <a href="#"><i class="fa fa-user-circle"></i><span>User</span></a>
+    <a href="#"><i class="fa fa-search"></i><span>Search</span></a>
+    <a href="#"><i class="fa fa-comment"></i><span>Chat</span></a>
+    <a href="#"><i class="fa fa-bell"></i><sapn>Notification</sapn></a>
+</div>
+<span style="font-size:30px;cursor:pointer" class="openbutton" onclick="openNav()"><i class="fa fa-chevron-circle-left"></i></span>
+</body>
+</html> 
